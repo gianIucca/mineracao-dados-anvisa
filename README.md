@@ -8,17 +8,4 @@ PS: A resolução de número 4866, datada no dia 30/12/2021 aparece na Edição 
 
 Após minerar todos os dados das páginas e verificar o tamanho de cada lista, é possível começar a entender os dados e começar a planejar o nosso banco de dados. Foi possível verificar que só possuem 6 resultados de resoluções, uma para cada resultado; A quantidade de nomes de empresas e autorizações será sempre o mesmo; Nem todos os produtos irão possuir um expediente, será quase metade deles que irão possuir um apenas; Nem todos os produtos possuem um vencimento, porém é muito raro; Não existe nenhum valor único dentro da base de dados para ser usado como Primary Key
 
-Transformações sugeridas para os dados: 
--Padronizar a coluna Validade do Produto para o mesmo período de tempo (como o menor período é de dias, vai ser o padrão)
-
--Separar a coluna resolução em duas colunas: Número da resolução (int) e Data da resolução (Datetime) 
-
--Transformar todos os registros em letras maiúsculas  
-
--Transformar todos os valores desconhecidos (como o 000 nos registros, e o valor em branco em outras categorias) em valores nulos
-
--Transformar a coluna de vencimento para datetime
-
--Dividir a coluna categoria em Id e Classe da categoria 
-
 Tecnologias utilizadas: Python, Requests, BeautifulSoup, Pandas, Numpy e SQL
